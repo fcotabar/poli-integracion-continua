@@ -1,0 +1,30 @@
+<h3 style="position:absolute; top: 30px; left:20px;">
+    <a (click)="back()" style="cursor: pointer">
+        <i class="fas fa-angle-left fa-1x"></i>
+        <i class="fas fa-car-crash"></i>
+        <label><span>&nbsp;Vehìculos</span></label>
+    </a>
+</h3>
+
+<div style="left: 20px;" class="classGridgeneral">
+    <ag-grid-angular style="width: 1500px; height: 360px; " class="ag-theme-balham" [rowData]="(rowData?.results)" [columnDefs]="columnDefs" rowSelection="multiple" [pagination]="true" [defaultColDef]="defaultColDef">
+    </ag-grid-angular>
+    <nav aria-label="Page navigation example">
+        <ul class="pagination">
+            <!-- <li class="page-item">
+                <a class="page-link" href="#" aria-label="Previous">
+                    <span aria-hidden="true">&laquo;</span>
+                </a>
+            </li>-->
+            <li (click)="getAllVehiculos(1)" class="page-item"><a class="page-link" href="javascript:void(0)">1</a></li>
+            <li (click)="getAllVehiculos(2)" class="page-item"><a class="page-link" href="javascript:void(0)">2</a></li>
+            <li (click)="getAllVehiculos(3)" class="page-item"><a class="page-link" href="javascript:void(0)">3</a></li>
+            <li (click)="getAllVehiculos(4)" class="page-item"><a class="page-link" href="javascript:void(0)">4</a></li>
+            <!-- <li class="page-item">
+                <a class="page-link" href="#" aria-label="Next">
+                    <span aria-hidden="true">&raquo;</span>
+                </a>
+            </li>-->
+        </ul>
+    </nav>
+</div>

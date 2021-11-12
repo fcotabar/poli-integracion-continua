@@ -1,0 +1,30 @@
+<h3 style="position:absolute; top: 30px; left: 30px;">
+    <a (click)="back()" style="cursor: pointer">
+        <i class="fas fa-angle-left fa-1x"></i>
+        <i class="fas fa-film"></i>
+        <label><span>&nbsp;Peliculas</span></label>
+    </a>
+</h3>
+
+
+<div style="left: 30px;" class="classGridgeneral">
+    <ag-grid-angular style="width: 1230px; height: 240px;" class="ag-theme-balham" [rowData]="(rowData?.results)" [columnDefs]="columnDefs" rowSelection="multiple" [defaultColDef]="defaultColDef">
+    </ag-grid-angular>
+    <!-- <nav aria-label="Page navigation example">
+        <ul class="pagination">
+            <li class="page-item">
+                <a class="page-link" href="#" aria-label="Previous">
+                    <span aria-hidden="true">&laquo;</span>
+                </a>
+            </li>
+            <li class="page-item"><a class="page-link" href="#">1</a></li>
+            <li class="page-item"><a class="page-link" href="#">2</a></li>
+            <li class="page-item"><a class="page-link" href="#">3</a></li>
+            <li class="page-item">
+                <a class="page-link" href="#" aria-label="Next">
+                    <span aria-hidden="true">&raquo;</span>
+                </a>
+            </li>
+        </ul>
+    </nav> -->
+</div>

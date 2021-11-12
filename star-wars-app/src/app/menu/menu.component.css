@@ -1,0 +1,22 @@
+.menu-principal {
+    margin-top: 35px;
+}
+
+.row {
+    margin-bottom: 40px;
+}
+
+
+/* visited link */
+
+a,
+a:visited {
+    color: black;
+}
+
+
+/* mouse over link */
+
+a:hover {
+    color: dodgerblue;
+}
