@@ -8,7 +8,7 @@ import { Naves } from "../interfaces/naves";
   providedIn: "root",
 })
 export class NavesService {
-  public urlApi = "https://swapi.dev/api/starships/";
+  public urlApi = "https://swapi.py4e.com/api/starships/";
   constructor(private httpClient: HttpClient) {}
 
   getAllNaves(idpage: number): Observable<Naves[]> {

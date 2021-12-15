@@ -7,7 +7,7 @@ import { Personas } from "../interfaces/personas";
   providedIn: "root",
 })
 export class PersonasService {
-  public urlApi = "https://swapi.dev/api/people/";
+  public urlApi = "https://swapi.py4e.com/api/people/";
 
   constructor(private httpClient: HttpClient) {}
 

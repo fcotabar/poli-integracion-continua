@@ -8,7 +8,7 @@ import { Vehiculos } from "../interfaces/vehiculos";
   providedIn: "root",
 })
 export class VehiculosService {
-  public urlApi = "https://swapi.dev/api/vehicles/";
+  public urlApi = "https://swapi.py4e.com/api/vehicles/";
   constructor(private httpClient: HttpClient) {}
 
   getAllVehiculos(idpage: number): Observable<Vehiculos[]> {

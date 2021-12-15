@@ -8,7 +8,7 @@ import { Planetas } from "../interfaces/planetas";
   providedIn: "root",
 })
 export class PlanetasService {
-  public urlApi = "https://swapi.dev/api/planets/";
+  public urlApi = "https://swapi.py4e.com/api/planets/";
 
   constructor(private httpClient: HttpClient) {}
 

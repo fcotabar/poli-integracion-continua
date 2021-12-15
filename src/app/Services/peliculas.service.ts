@@ -11,6 +11,8 @@ export class PeliculasService {
   constructor(private httpClient: HttpClient) {}
 
   getAllPeliculas(): Observable<Peliculas[]> {
-    return this.httpClient.get<Peliculas[]>("https://swapi.dev/api/films/");
+    return this.httpClient.get<Peliculas[]>(
+      "https://swapi.py4e.com/api/films/"
+    );
   }
 }

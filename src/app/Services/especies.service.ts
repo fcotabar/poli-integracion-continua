@@ -8,7 +8,7 @@ import { Especies } from "../interfaces/especies";
   providedIn: "root",
 })
 export class EspeciesService {
-  public urlApi = "http://localhost:4000/api/species/";
+  public urlApi = "https://swapi.py4e.com/api/species/";
 
   constructor(private httpClient: HttpClient) {}
 
